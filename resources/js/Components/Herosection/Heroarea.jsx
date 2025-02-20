@@ -11,7 +11,7 @@ const  HeroArea = () => {
         </h1>
 
         {/* Get Started Button */}
-        <div className="mt-10 mb-5 font-Inter sm:mt-14">
+        <div className="mt-10 mb-5 font-Inter text-center sm:mt-14">
           <Link
             to="/register"
             className="bg-white text-[#6941C6] font-semibold py-3 px-3 sm:px-10 xl:text-base xl:font-semibold rounded-lg shadow-md hover:bg-gray-100 transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white"
