@@ -20,13 +20,13 @@ const Navbar = () => {
           {/* Right Section: Links */}
           <div className="flex space-x-1 sm:space-x-7 lg:space-x-7">
             <Link
-              to="/login"
+              href={route('login')}
               className="bg-[#6243A8]  text-white px-3 sm:px-6 xl:text-sm xl:font-semibold py-2 rounded-lg text-xs sm:text-base transition duration-200 hover:bg-[#503694]"
             >
               Sign in
             </Link>
             <Link
-              to="/register"
+              href={route('register')}
               className="bg-white text-[#6243A8] border border-[#6243A8] px-2 sm:px-4 xl:text-sm xl:font-semibold py-2 rounded-lg text-xs sm:text-base transition duration-200 hover:bg-[#f1f1f1]"
             >
               Sign up

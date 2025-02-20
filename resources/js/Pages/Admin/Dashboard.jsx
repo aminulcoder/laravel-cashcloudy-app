@@ -6,7 +6,10 @@ import { Link } from "@inertiajs/react";
 import NavLink from "@/Components/NavLink";
 import Tooltip from "@/Components/Tooltip/Tooltip";
 import { Button } from "@headlessui/react";
+// import { IoClose } from "react-icons/io5";
 import classNames from "classnames";
+import { LockClosedIcon } from "@heroicons/react/24/solid";
+
 // import { NavLink } from "react-router-dom";
 export default function Dashboard() {
   const [showModal, setshowModal] = useState(false);
@@ -549,7 +552,7 @@ export default function Dashboard() {
 
               {/* Close Icon */}
               <div className="absolute top-3 right-3 cursor-pointer">
-                <IoClose onClick={() => setshowModal(false)} size={24} />
+                <LockClosedIcon onClick={() => setshowModal(false)} size={24} />
               </div>
             </div>
           </div>
