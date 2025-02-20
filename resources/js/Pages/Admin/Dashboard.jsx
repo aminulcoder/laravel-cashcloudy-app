@@ -1,20 +1,18 @@
 
-import { ArrowDownIcon, ChartBarIcon } from "@heroicons/react/20/solid";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { useState } from "react";
-import {
-
-  CreditCardIcon,
-
-  PlusIcon,
-} from "@heroicons/react/24/outline";
+import {CreditCardIcon, PlusIcon,} from "@heroicons/react/24/outline";
 import { Link } from "@inertiajs/react";
 import NavLink from "@/Components/NavLink";
 import Tooltip from "@/Components/Tooltip/Tooltip";
 import { Button } from "@headlessui/react";
+import classNames from "classnames";
+// import { NavLink } from "react-router-dom";
 export default function Dashboard() {
   const [showModal, setshowModal] = useState(false);
   const [showendModal, setshowendModal] = useState(false);
+
+
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
@@ -361,7 +359,7 @@ export default function Dashboard() {
                 <div className="flex items-center space-x-2">
                   {/* <ChartBarIcon className="h-4 w-4 text-gray-400" /> */}
                   <img
-                    src="/assets/paper dashboard/bar-chart-04.svg"
+                    src={window.location.origin + '/assets/Dashboard/balancecard/bar-chart-04.svg'}
                     className="h-4 w-4"
                     alt="Avatar"
                   />
@@ -374,87 +372,68 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-wrap items-center justify-start gap-2">
-                <NavLink
-                  to="/admin/sendmoney"
-                  className={({ isActive }) =>
-                    classNames(
-                      isActive
-                        ? "bg-[#7F56D9] text-white"
-                        : "text-gray-800 dark:text-gray-400 hover:bg-[#7F56D9] hover:text-white",
-                      "group flex border items-center gap-x-2 text-base sm:gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6"
-                    )
-                  }
-                >
-                  {({ isActive }) => (
-                    <>
-                      <img
-                        src="/assets/icon/paperplane.svg"
-                        className={classNames(
-                          " h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-[#344054]",
-                          "group-hover:brightness-0 group-hover:invert",
-                          isActive ? "brightness-0 invert" : ""
-                        )}
-                        alt="Dashboard Icon"
-                      />
-                      Send
-                    </>
-                  )}
-                </NavLink>
-                <NavLink
-                  to="/admin/widthdraw-money"
-                  className={({ isActive }) =>
-                    classNames(
-                      isActive
-                        ? "bg-[#7F56D9] text-white"
-                        : "text-gray-800 dark:text-gray-400 hover:bg-[#7F56D9] hover:text-white",
-                      "group flex border items-center text-base gap-x-2 sm:gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6"
-                    )
-                  }
-                >
-                  {({ isActive }) => (
-                    <>
-                      <img
-                        src="/assets/icon/bank icon.svg"
-                        className={classNames(
-                          "h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-[#344054]",
-                          "group-hover:brightness-0 group-hover:invert",
-                          isActive ? "brightness-0 invert" : ""
-                        )}
-                        alt="Dashboard Icon"
-                      />
-                      Widthdraw
-                    </>
-                  )}
-                </NavLink>
-                <NavLink
-                  to="/admin/request-money"
-                  className={({ isActive }) =>
-                    classNames(
-                      isActive
-                        ? "bg-[#7F56D9] text-white"
-                        : "text-gray-800 dark:text-gray-400 hover:bg-[#7F56D9] hover:text-white",
-                      "group flex border items-center text-base  gap-x-2 sm:gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6"
-                    )
-                  }
-                >
-                  {({ isActive }) => (
-                    <>
-                      <img
-                        src="/assets/icon/currency-dollar-circle-1.svg"
-                        className={classNames(
-                          "h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-[#344054]",
-                          "group-hover:brightness-0 group-hover:invert",
-                          isActive ? "brightness-0 invert" : ""
-                        )}
-                        alt="Dashboard Icon"
-                      />
-                      Request
-                    </>
-                  )}
-                </NavLink>
-              </div>
+
+
+
+    <div className="flex flex-wrap items-center justify-start gap-2">
+      <NavLink
+        to="/admin/sendmoney"
+        className={({ isActive }) =>
+          classNames(
+            "group flex border-2 items-center gap-x-2 border-gray-500 text-base sm:gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6",
+            isActive
+              ? "bg-[#7F56D9] text-white"
+              : "text-gray-800  hover:bg-[#7F56D9] hover:text-white"
+          )
+        }
+      >
+        <img
+          src={window.location.origin + '/assets/Dashboard/balancecard/icon/paperplane.svg'}
+          className="h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-[#344054] group-hover:brightness-0 group-hover:invert"
+          alt="Send Money"
+        />
+        Send
+      </NavLink>
+
+      <NavLink
+        to="/admin/widthdraw-money"
+        className={({ isActive }) =>
+          classNames(
+            "group flex border items-center text-base gap-x-2 sm:gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6",
+            isActive
+              ? "bg-[#7F56D9] text-white"
+              : "text-gray-800  hover:bg-[#7F56D9] hover:text-white"
+          )
+        }
+      >
+        <img
+          src={window.location.origin + '/assets/Dashboard/balancecard/icon/bank icon.svg'}
+          className="h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-[#344054] group-hover:brightness-0 group-hover:invert"
+          alt="Withdraw Money"
+        />
+        Withdraw
+      </NavLink>
+
+      <NavLink
+        to="/admin/request-money"
+        className={({ isActive }) =>
+          classNames(
+            "group flex border items-center text-base gap-x-2 sm:gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6",
+            isActive
+              ? "bg-[#7F56D9] text-white"
+              : "text-gray-800  hover:bg-[#7F56D9] hover:text-white"
+          )
+        }
+      >
+        <img
+          src={window.location.origin + '/assets/Dashboard/balancecard/icon/currency-dollar-circle-1.svg'}
+          className="h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-[#344054] group-hover:brightness-0 group-hover:invert"
+          alt="Request Money"
+        />
+        Request
+      </NavLink>
+    </div>
+
             </div>
           </div>
         </div>
@@ -465,7 +444,7 @@ export default function Dashboard() {
           {/* Left Section */}
           <div className="flex  space-x-1 sm:space-x-3 px-2">
             <img
-              src="/assets/paper dashboard/credit-card-upload.svg"
+              src={window.location.origin + '/assets/Dashboard/Phoenix/credit-card-upload.svg'}
               className="h-8 w-8 sm:h-12 sm:w-12 bg-[#7F56D9] rounded-full p-2 sm:p-3"
               alt="Avatar"
             />
@@ -585,20 +564,18 @@ export default function Dashboard() {
           <div className="flex items-center space-x-2  ">
             <div className="hover:bg-gray-300 p-3 rounded">
               <img
-                src="/assets/icon/left arrow icon.svg"
+                src={window.location.origin + '/assets/Dashboard/recent/icon/left arrow icon.svg'}
                 className="h-3 w-3 sm:h-3 sm:w-3   hover:bg-gray-200 active:bg-gray-300 rounded"
                 alt="Avatar"
               />
             </div>
             <div className="hover:bg-gray-300 p-3 rounded">
               <img
-                src="/assets/icon/right arrow svg.svg"
+                src={window.location.origin + '/assets/Dashboard/recent/icon/right arrow svg.svg'}
                 className="h-3 w-3 sm:h-3 sm:w-3  hover:bg-gray-200 active:bg-gray-300 rounded"
                 alt="Avatar"
               />
             </div>
-            {/* <ArrowLeftIcon className="h-6 w-6 sm:h-8 sm:w-8 p-1 sm:p-2 hover:bg-gray-200 active:bg-gray-300 rounded" /> */}
-            {/* <ArrowRightIcon className="h-6 w-6 sm:h-8 sm:w-8 p-1 sm:p-2 hover:bg-gray-200 active:bg-gray-300 rounded" /> */}
           </div>
         </div>
 
@@ -608,7 +585,7 @@ export default function Dashboard() {
               {/* First Contact */}
               <div className="flex items-center space-x-2 border rounded-full px-2 py-2">
                 <img
-                  src="/assets/users/Avatar.png"
+                  src={window.location.origin + '/assets/Dashboard/users/Avatar.png'}
                   className="h-7 w-7"
                   alt="Avatar"
                 />
@@ -619,7 +596,7 @@ export default function Dashboard() {
               {/* Second Contact */}
               <div className="flex items-center space-x-2 border rounded-full px-2 py-2">
                 <img
-                  src="/assets/users/Avatar.png"
+                  src={window.location.origin + '/assets/Dashboard/users/Avatar.png'}
                   className="h-7 w-7"
                   alt="Avatar"
                 />
@@ -630,7 +607,7 @@ export default function Dashboard() {
               {/* Third Contact */}
               <div className="flex items-center space-x-2 border rounded-full px-2 py-2">
                 <img
-                  src="/assets/users/Avatar.png"
+                  src={window.location.origin + '/assets/Dashboard/users/Avatar.png'}
                   className="h-7 w-7"
                   alt="Avatar"
                 />
@@ -641,7 +618,7 @@ export default function Dashboard() {
               {/* Fourth Contact */}
               <div className="flex items-center space-x-2 border rounded-full px-2 py-2">
                 <img
-                  src="/assets/users/Avatar.png"
+                  src={window.location.origin + '/assets/Dashboard/users/Avatar.png'}
                   className="h-7 w-7"
                   alt="Avatar"
                 />
@@ -652,7 +629,7 @@ export default function Dashboard() {
               {/* Fifth Contact */}
               <div className="flex items-center space-x-2 border rounded-full px-2 py-2">
                 <img
-                  src="/assets/users/Avatar.png"
+                  src={window.location.origin + '/assets/Dashboard/users/Avatar.png'}
                   className="h-7 w-7"
                   alt="Avatar"
                 />
@@ -662,7 +639,7 @@ export default function Dashboard() {
               </div>
               <div className="flex items-center space-x-2 border rounded-full px-2 py-2">
                 <img
-                  src="/assets/users/Avatar.png"
+                  src={window.location.origin + '/assets/Dashboard/users/Avatar.png'}
                   className="h-7 w-7"
                   alt="Avatar"
                 />
@@ -700,7 +677,7 @@ export default function Dashboard() {
             </p>
             {/* <ArrowRightIcon className="h-4 w-4" /> */}
             <img
-              src="/assets/icon/right arrow svg.svg"
+              src={window.location.origin + '/assets/Dashboard/transactions/right arrow svg.svg'}
               className=" h-3 w-3 "
               alt="Avatar"
             />
@@ -713,7 +690,7 @@ export default function Dashboard() {
             <div className="p-2 rounded-full bg-gray-200">
               {/* <ArrowDownIcon className="h-5 w-5 sm:h-[14px] sm:w-[14px]" /> */}
               <img
-                src="/assets/icon/down arrow icon.svg"
+                src={window.location.origin + '/assets/Dashboard/transactions/down arrow icon.svg'}
                 className="h-4 w-4 sm:h-[12px] sm:w-[12px]"
                 alt="Avatar"
               />
@@ -741,7 +718,7 @@ export default function Dashboard() {
               {/* <ArrowDownIcon className="h-5 w-5 sm:h-[14px] sm:w-[14px]" /> */}
 
               <img
-                src="/assets/icon/down arrow icon.svg"
+                src={window.location.origin + '/assets/Dashboard/transactions/down arrow icon.svg'}
                 className="h-4 w-4 sm:h-[12px] sm:w-[12px]"
                 alt="Avatar"
               />
@@ -767,7 +744,7 @@ export default function Dashboard() {
             <div className="p-2 rounded-full bg-gray-200">
               {/* <ArrowDownIcon className="h-5 w-5 sm:h-[14px] sm:w-[14px]" /> */}
               <img
-                src="/assets/icon/down arrow icon.svg"
+                src={window.location.origin + '/assets/Dashboard/transactions/down arrow icon.svg'}
                 className="h-4 w-4 sm:h-[12px] sm:w-[12px]"
                 alt="Avatar"
               />
@@ -794,7 +771,7 @@ export default function Dashboard() {
             <div className="p-2 rounded-full bg-gray-200">
               {/* <ArrowDownIcon className="h-5 w-5 sm:h-[14px] sm:w-[14px]" /> */}
               <img
-                src="/assets/icon/down arrow icon.svg"
+                src={window.location.origin + '/assets/Dashboard/transactions/down arrow icon.svg'}
                 className="h-4 w-4 sm:h-[12px] sm:w-[12px]"
                 alt="Avatar"
               />
@@ -821,7 +798,7 @@ export default function Dashboard() {
             <div className="p-2 rounded-full bg-gray-200">
               {/* <ArrowDownIcon className="h-5 w-5 sm:h-[14px] sm:w-[14px]" /> */}
               <img
-                src="/assets/icon/down arrow icon.svg"
+                src={window.location.origin + '/assets/Dashboard/transactions/down arrow icon.svg'}
                 className="h-4 w-4 sm:h-[12px] sm:w-[12px]"
                 alt="Avatar"
               />
@@ -847,7 +824,7 @@ export default function Dashboard() {
             <div className="p-2 rounded-full bg-gray-200">
               {/* <ArrowDownIcon className="h-5 w-5 sm:h-[14px] sm:w-[14px]" /> */}
               <img
-                src="/assets/icon/down arrow icon.svg"
+                src={window.location.origin + '/assets/Dashboard/transactions/down arrow icon.svg'}
                 className="h-4 w-4 sm:h-[12px] sm:w-[12px]"
                 alt="Avatar"
               />
@@ -873,7 +850,7 @@ export default function Dashboard() {
             <div className="p-2 rounded-full bg-gray-200">
               {/* <ArrowDownIcon className="h-5 w-5 sm:h-[14px] sm:w-[14px]" /> */}
               <img
-                src="/assets/icon/down arrow icon.svg"
+                src={window.location.origin + '/assets/Dashboard/transactions/down arrow icon.svg'}
                 className="h-4 w-4 sm:h-[12px] sm:w-[12px]"
                 alt="Avatar"
               />
@@ -899,7 +876,7 @@ export default function Dashboard() {
             <div className="p-2 rounded-full bg-gray-200">
               {/* <ArrowDownIcon className="h-5 w-5 sm:h-[14px] sm:w-[14px]" /> */}
               <img
-                src="/assets/icon/down arrow icon.svg"
+                src={window.location.origin + '/assets/Dashboard/transactions/down arrow icon.svg'}
                 className="h-4 w-4 sm:h-[12px] sm:w-[12px]"
                 alt="Avatar"
               />
