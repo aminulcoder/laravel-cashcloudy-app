@@ -381,7 +381,7 @@ export default function Dashboard() {
 
     <div className="flex flex-wrap items-center justify-start gap-2">
       <NavLink
-        to="/admin/sendmoney"
+        href={route('sendmoney')}
         className={({ isActive }) =>
           classNames(
             "group flex border-2 items-center gap-x-2 border-gray-500 text-base sm:gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6",
@@ -400,7 +400,7 @@ export default function Dashboard() {
       </NavLink>
 
       <NavLink
-        to="/admin/widthdraw-money"
+      href={route('widthdraw.money')}
         className={({ isActive }) =>
           classNames(
             "group flex border items-center text-base gap-x-2 sm:gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6",
@@ -419,7 +419,7 @@ export default function Dashboard() {
       </NavLink>
 
       <NavLink
-        to="/admin/request-money"
+          href={route('request.money')}
         className={({ isActive }) =>
           classNames(
             "group flex border items-center text-base gap-x-2 sm:gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6",
