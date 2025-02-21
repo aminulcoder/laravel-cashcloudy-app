@@ -9,6 +9,7 @@ import { Button } from "@headlessui/react";
 // import { IoClose } from "react-icons/io5";
 import classNames from "classnames";
 import { LockClosedIcon } from "@heroicons/react/24/solid";
+import { ClockIcon } from "@heroicons/react/20/solid";
 
 // import { NavLink } from "react-router-dom";
 export default function Dashboard() {
@@ -142,7 +143,7 @@ export default function Dashboard() {
                                     />
                                     <div className="absolute left-2 top-0 flex items-center h-full">
                                       <img
-                                        src="/assets/Mastercard.svg" // Correct import path
+                                        src={window.location.origin + '/assets/Dashboard/mastercard/Mastercard.svg'}
                                         alt="Card Icon"
                                         className="w-5 h-5" // Adjusted size for better visibility
                                       />
@@ -348,7 +349,7 @@ export default function Dashboard() {
 
                           {/* Close Icon */}
                           <div className="absolute top-3 right-3 cursor-pointer">
-                            <IoClose
+                            <ClockIcon
                               onClick={() => setshowendModal(false)}
                               size={24}
                             />
@@ -672,7 +673,7 @@ export default function Dashboard() {
             Transactions
           </p>
           <Link
-            to={"/admin/transction"}
+            href={route('transection')}
             className="flex items-center font-semibold border rounded-lg py-2 px-3 space-x-2"
           >
             <p className="text-sm sm:text-base font-Inter text-[#344054]">

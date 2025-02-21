@@ -57,11 +57,9 @@ const navigation = [
             { name: 'Three', href: '#' },
         ],
     },
-    { name: 'Department', href: '#', icon: UsersIcon, current: true },
-    { name: 'Projects', href: '#', icon: FolderIcon, current: false },
-    { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-    { name: 'Documents', href: '#', icon: DocumentDuplicateIcon, current: false },
-    { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
+    { name: 'Transection', href: route('transection'), icon: UsersIcon, current: false },
+    { name: 'Earn 20$',href: route('earnmoney'), icon: FolderIcon, current: false },
+
 ];
 
 const teams = [
