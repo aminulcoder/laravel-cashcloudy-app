@@ -73,7 +73,7 @@ const Request = () => {
         </div>
       </div>
 
-      <div className="bg-violet-600 rounded-lg my-3">
+      <div className="bg-violet-600 text-center rounded-lg my-3">
         <button
           onClick={() => setshowModal(true)}
           className=" bg-violet-600 text-white py-2"

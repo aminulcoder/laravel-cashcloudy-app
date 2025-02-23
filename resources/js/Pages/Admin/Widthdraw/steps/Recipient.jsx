@@ -8,7 +8,7 @@ const Recipient = () => {
 
       <div className="sm:col-span-3 py-1">
         <label htmlFor="country" className="text-start block text-base font-Inter font-normal text-[#344054]">
-       Select  Country 
+       Select  Country
         </label>
         <div className="mt-2 grid grid-cols-1">
           <select
@@ -48,7 +48,7 @@ const Recipient = () => {
         </div>
       </div>
 
-      
+
       <div className="sm:col-span-3 py-1">
         <label htmlFor="country" className="text-start block text-base font-Inter font-normal text-[#344054]">
         Bank name
@@ -89,7 +89,7 @@ const Recipient = () => {
             <option>Canada</option>
             <option>Mexico</option>
           </select>
-         
+
           <ChevronDownIcon
             aria-hidden="true"
             className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
@@ -97,7 +97,7 @@ const Recipient = () => {
         </div>
       </div>
 
-    
+
       <div className="sm:col-span-4 py-1">
         <label htmlFor="username" className=" text-start block text-sm/6 font-medium text-[#667085]">
         Account number
@@ -115,7 +115,7 @@ const Recipient = () => {
           </div>
         </div>
       </div>
-      <div className="bg-violet-600 rounded-lg my-3">
+      <div className="bg-violet-600 rounded-lg my-3 text-center">
         <button className='text-base font-semibold bg-violet-600 text-white py-1'>Confirm</button>
       </div>
     </div>

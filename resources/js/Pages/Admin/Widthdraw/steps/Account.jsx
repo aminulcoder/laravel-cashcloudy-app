@@ -30,7 +30,8 @@ const Account = () => {
         </div>
         {/* <ChevronRightIcon className="h-5 w-5 font-bold " /> */}
         <img
-              src="/assets/icon/chevron-right.svg"
+            //   src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/chevron-right.svg`}
+              src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
@@ -52,7 +53,8 @@ const Account = () => {
           <div className="flex items-center px-3">
             <div className=" flex items-center justify-center h-12 w-12 border rounded-full p-1">
               <img
-                src="/assets/widthdraw/_Nav item button (1).png"
+                //src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/_Nav item button (1).png`}
+                src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/_Nav item button (1).png`}
                 alt=""
                 srcset=""
               />
@@ -66,19 +68,19 @@ const Account = () => {
               </p>
             </div>
           </div>
-       
+
           <img
-              src="/assets/icon/chevron-right.svg"
+               src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
-          
+
         </div>
         <div className="flex justify-between items-center">
           <div className="flex items-center px-3">
             <div className=" flex items-center justify-center h-12 w-12 border rounded-full p-1">
               <img
-                src="/assets/widthdraw/_Nav item button (1).png"
+               src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/_Nav item button (1).png`}
                 alt=""
                 srcset=""
               />
@@ -92,19 +94,19 @@ const Account = () => {
               </p>
             </div>
           </div>
-       
+
           <img
-              src="/assets/icon/chevron-right.svg"
+              src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
-          
+
         </div>
         <div className="flex justify-between items-center">
           <div className="flex items-center px-3">
             <div className=" flex items-center justify-center h-12 w-12 border rounded-full p-1">
               <img
-                src="/assets/widthdraw/_Nav item button (1).png"
+               src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/_Nav item button (1).png`}
                 alt=""
                 srcset=""
               />
@@ -118,19 +120,19 @@ const Account = () => {
               </p>
             </div>
           </div>
-       
+
           <img
-              src="/assets/icon/chevron-right.svg"
+              src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
-          
+
         </div>
         <div className="flex justify-between items-center">
           <div className="flex items-center px-3">
             <div className=" flex items-center justify-center h-12 w-12 border rounded-full p-1">
               <img
-                src="/assets/widthdraw/_Nav item button (1).png"
+               src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/_Nav item button (1).png`}
                 alt=""
                 srcset=""
               />
@@ -144,19 +146,19 @@ const Account = () => {
               </p>
             </div>
           </div>
-       
+
           <img
-              src="/assets/icon/chevron-right.svg"
+              src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
-          
+
         </div>
         <div className="flex justify-between items-center">
           <div className="flex items-center px-3">
             <div className=" flex items-center justify-center h-12 w-12 border rounded-full p-1">
               <img
-                src="/assets/widthdraw/_Nav item button (1).png"
+               src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/_Nav item button (1).png`}
                 alt=""
                 srcset=""
               />
@@ -170,13 +172,13 @@ const Account = () => {
               </p>
             </div>
           </div>
-       
+
           <img
-              src="/assets/icon/chevron-right.svg"
+              src={`${window.location.origin}/assets/Dashboard/withdrawmoney/account/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
-          
+
         </div>
       </div>
     </div>

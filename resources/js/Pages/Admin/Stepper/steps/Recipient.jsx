@@ -30,7 +30,8 @@ const Recipient = () => {
           <div className="flex items-center sm:px-3 gap-1">
             <div className=" flex items-center justify-center  h-12 w-12  border rounded-full p-1">
               <img
-                src="/assets/stepper/_Nav item button.png"
+                //  src={`${window.location.origin}/assets/Dashboard/sendmoney/_Nav item button.png`}
+                src={`${window.location.origin}/assets/Dashboard/sendmoney/_Nav item button.png`}
                 alt=""
                 srcset=""
               />
@@ -46,7 +47,7 @@ const Recipient = () => {
           </div>
           {/* <ChevronRightIcon className="h-6 w-6 " /> */}
           <img
-              src="/assets/icon/chevron-right.svg"
+             src={`${window.location.origin}/assets/Dashboard/sendmoney/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
@@ -55,7 +56,7 @@ const Recipient = () => {
           <div className="flex items-center sm:px-3 gap-1">
             <div className=" flex items-center justify-center  h-12 w-12  border rounded-full p-1">
               <img
-                src="/assets/stepper/_Nav item button.png"
+                 src={`${window.location.origin}/assets/Dashboard/sendmoney/_Nav item button.png`}
                 alt=""
                 srcset=""
               />
@@ -70,7 +71,7 @@ const Recipient = () => {
             </div>
           </div>
           <img
-              src="/assets/icon/chevron-right.svg"
+               src={`${window.location.origin}/assets/Dashboard/sendmoney/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
@@ -79,7 +80,7 @@ const Recipient = () => {
           <div className="flex items-center sm:px-3 gap-1">
             <div className=" flex items-center justify-center  h-12 w-12  border rounded-full p-1">
               <img
-                src="/assets/stepper/_Nav item button.png"
+                 src={`${window.location.origin}/assets/Dashboard/sendmoney/_Nav item button.png`}
                 alt=""
                 srcset=""
               />
@@ -94,7 +95,7 @@ const Recipient = () => {
             </div>
           </div>
         <img
-              src="/assets/icon/chevron-right.svg"
+               src={`${window.location.origin}/assets/Dashboard/sendmoney/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
@@ -103,7 +104,7 @@ const Recipient = () => {
           <div className="flex items-center sm:px-3 gap-1">
             <div className=" flex items-center justify-center  h-12 w-12  border rounded-full p-1">
               <img
-                src="/assets/stepper/_Nav item button.png"
+                 src={`${window.location.origin}/assets/Dashboard/sendmoney/_Nav item button.png`}
                 alt=""
                 srcset=""
               />
@@ -118,7 +119,7 @@ const Recipient = () => {
             </div>
           </div>
         <img
-              src="/assets/icon/chevron-right.svg"
+               src={`${window.location.origin}/assets/Dashboard/sendmoney/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
@@ -127,7 +128,7 @@ const Recipient = () => {
           <div className="flex items-center sm:px-3 gap-1">
             <div className=" flex items-center justify-center  h-12 w-12  border rounded-full p-1">
               <img
-                src="/assets/stepper/_Nav item button.png"
+                 src={`${window.location.origin}/assets/Dashboard/sendmoney/_Nav item button.png`}
                 alt=""
                 srcset=""
               />
@@ -142,7 +143,7 @@ const Recipient = () => {
             </div>
           </div>
         <img
-              src="/assets/icon/chevron-right.svg"
+               src={`${window.location.origin}/assets/Dashboard/sendmoney/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
@@ -151,7 +152,7 @@ const Recipient = () => {
           <div className="flex items-center sm:px-3 gap-1">
             <div className=" flex items-center justify-center  h-12 w-12  border rounded-full p-1">
               <img
-                src="/assets/stepper/_Nav item button.png"
+                 src={`${window.location.origin}/assets/Dashboard/sendmoney/_Nav item button.png`}
                 alt=""
                 srcset=""
               />
@@ -166,7 +167,7 @@ const Recipient = () => {
             </div>
           </div>
         <img
-              src="/assets/icon/chevron-right.svg"
+               src={`${window.location.origin}/assets/Dashboard/sendmoney/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
@@ -175,7 +176,7 @@ const Recipient = () => {
           <div className="flex items-center sm:px-3 gap-1">
             <div className=" flex items-center justify-center  h-12 w-12  border rounded-full p-1">
               <img
-                src="/assets/stepper/_Nav item button.png"
+                 src={`${window.location.origin}/assets/Dashboard/sendmoney/_Nav item button.png`}
                 alt=""
                 srcset=""
               />
@@ -190,7 +191,7 @@ const Recipient = () => {
             </div>
           </div>
         <img
-              src="/assets/icon/chevron-right.svg"
+               src={`${window.location.origin}/assets/Dashboard/sendmoney/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
@@ -199,7 +200,7 @@ const Recipient = () => {
           <div className="flex items-center sm:px-3 gap-1">
             <div className=" flex items-center justify-center  h-12 w-12  border rounded-full p-1">
               <img
-                src="/assets/stepper/_Nav item button.png"
+                 src={`${window.location.origin}/assets/Dashboard/sendmoney/_Nav item button.png`}
                 alt=""
                 srcset=""
               />
@@ -214,12 +215,12 @@ const Recipient = () => {
             </div>
           </div>
         <img
-              src="/assets/icon/chevron-right.svg"
+               src={`${window.location.origin}/assets/Dashboard/sendmoney/chevron-right.svg`}
               className=" h-6 w-6"
               alt="Avatar"
             />
         </div>
-    
+
       </div>
     </div>
   );

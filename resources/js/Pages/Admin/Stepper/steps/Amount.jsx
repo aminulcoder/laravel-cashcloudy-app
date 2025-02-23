@@ -14,7 +14,7 @@ const Amount = () => {
           <div class="mt-2">
             <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 sm:py-2 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
               <div class="shrink-0 select-none text-base text-gray-500 sm:text-sm/6"></div>
-              <input type="text" name="price" id="price" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-950 focus:outline focus:outline-0 sm:text-sm/6 placeholder:text-base placeholder:font-semibold placeholder:font-Inter" placeholder="100" />  
+              <input type="text" name="price" id="price" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-950 focus:outline focus:outline-0 sm:text-sm/6 placeholder:text-base placeholder:font-semibold placeholder:font-Inter" placeholder="100" />
               <div class="grid shrink-0 grid-cols-1 focus-within:relative">
                 <select id="currency" name="currency" aria-label="Currency" class="col-start-1 row-start-1 w-full appearance-none rounded-md py-1.5 pl-3 pr-7 text-base text-gray-500 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                   <option>USD</option>
@@ -41,8 +41,8 @@ const Amount = () => {
         <p className='text-base sm:text-sm font-normal text-[#475467]'>Should arrive</p>
         <span className='text-base sm:text-base font-semibold text-gray-950'>by Sunday, 1 January</span>
       </div>
-      <div className="bg-violet-600 rounded-lg">
-        <button className='text-lg font-bold bg-violet-600 text-white py-1 sm:py-2'>Continue</button>
+      <div className="bg-violet-600 rounded-lg text-center">
+        <button className='text-lg font-bold bg-violet-600  text-white py-1 sm:py-2'>Continue</button>
       </div>
 
     </div>

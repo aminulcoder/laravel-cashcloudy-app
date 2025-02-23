@@ -187,36 +187,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                             <li>
                                 <ul role="list" className="-mx-2 space-y-1">
                                     <li className=" space-y-1">
-                                        {/* <NavLink
-                                            href={route("dashboard")}
-                                            className={({ isActive }) =>
-                                                classNames(
-                                                    isActive
-                                                        ? "bg-[#7F56D9] text-white"
-                                                        : "text-gray-800 hover:bg-[#7F56D9] hover:text-white",
-                                                    "group flex gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6"
-                                                )
-                                            }
-                                        >
-                                            <img
-                                                src={
-                                                    window.location.origin +
-                                                    "/assets/Dashboard/sidebar/network black icon.svg"
-                                                }
-                                                className="h-6 w-6"
-                                                alt="Dashboard Icon"
-                                            />
-                                            Dashboard
-                                        </NavLink> */}
-
                                         <NavLink
                                             href={route("dashboard")}
                                             className={({ isActive }) =>
                                                 classNames(
                                                     isActive
-                                                        ? "bg-[#7F56D9] text-white"
+                                                        ? "bg-[#7F56D9]  w-full text-white"
                                                         : "text-white hover:bg-[#7F56D9] hover:text-white",
-                                                    "group flex gap-x-3 hover:text-white rounded-md p-2 lg:text-lg font-semibold leading-6"
+                                                    "group flex gap-x-3  hover:text-white rounded-md p-2 lg:text-lg font-semibold leading-6"
                                                 )
                                             }
                                         >
@@ -229,49 +207,63 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                         </NavLink>
 
                                         <NavLink
-                                            to={route("transection")}
+                                            href={route("transection")}
                                             className={({ isActive }) =>
                                                 classNames(
                                                     isActive
-                                                        ? "bg-[#7F56D9] text-white"
+                                                        ? "bg-[#7F56D9]  w-full text-white"
                                                         : "text-white hover:bg-[#7F56D9] hover:text-white",
-                                                    "group flex gap-x-3 rounded-md p-2 hover:text-white lg:text-lg font-semibold leading-6"
+                                                    "group flex gap-x-3  hover:text-white rounded-md p-2 lg:text-lg font-semibold leading-6"
                                                 )
                                             }
                                         >
                                             <img
-                                                src={
-                                                    window.location.origin +
-                                                    "/assets/Dashboard/sidebar/switch-horizontal-01.svg"
-                                                }
+                                                src={`${window.location.origin}/assets/Dashboard/sidebar/switch-horizontal-01.svg`}
                                                 className="h-6 w-6"
-                                                alt="Transactions Icon"
+                                                alt="Dashboard Icon"
                                             />
-                                            Transactions
+                                            transection
                                         </NavLink>
-
-
-                                        <NavLink
-                                            to={route("earnmoney")}
+                                        {/* <NavLink
+                                            href={route("earnmoney")}
                                             className={({ isActive }) =>
                                                 classNames(
                                                     isActive
-                                                        ? "bg-[#7F56D9] text-white"
+                                                        ? "bg-[#7F56D9]  w-full text-white"
                                                         : "text-white hover:bg-[#7F56D9] hover:text-white",
-                                                    "group flex gap-x-3 hover:text-white rounded-md p-2 lg:text-lg font-semibold leading-6"
+                                                    "group flex gap-x-3  hover:text-white rounded-md p-2 lg:text-lg font-semibold leading-6"
                                                 )
                                             }
                                         >
                                             <img
-                                                src={
-                                                    window.location.origin +
-                                                    "/assets/Dashboard/sidebar/gift-02.svg"
-                                                }
+                                                src={`${window.location.origin}/assets/Dashboard/sidebar/gift-02.svg`}
                                                 className="h-6 w-6"
                                                 alt="Dashboard Icon"
                                             />
                                             Earn 20$
-                                        </NavLink>
+                                        </NavLink> */}
+<NavLink
+    href={route("earnmoney")}
+    className={({ isActive }) => {
+        console.log(isActive); // Debugging log
+        return classNames(
+            isActive ? "bg-red-500 text-white" : "text-white hover:bg-[#7F56D9] hover:text-white",
+            "group flex gap-x-3 rounded-md p-2 lg:text-lg font-semibold leading-6"
+        );
+    }}
+>
+    <img
+        src={`${window.location.origin}/assets/Dashboard/sidebar/gift-02.svg`}
+        className="h-6 w-6"
+        alt="Earn 20$ Icon"
+    />
+    Earn 20$
+</NavLink>
+
+
+
+
+
                                     </li>
                                 </ul>
                             </li>
