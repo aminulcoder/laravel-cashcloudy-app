@@ -23,8 +23,6 @@ Route::middleware('auth','verified')->prefix('admin')->group(function () {
     Route::get('widthdraw-money', [WithdrawmoneyController::class, 'widthdrawmoney'])->name('widthdraw.money');
     Route::get('request-money', [RequestmoneyController::class, 'requestmoney'])->name('request.money');
 
-
-    
     //stripe payment
     Route::get('/add-card', [StripeController::class, 'showAddCardPage'])->name('card.add');
     Route::post('/add-card', [StripeController::class, 'addCard'])->name('stripe.add-card');
