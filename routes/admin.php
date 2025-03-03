@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
-use App\Http\Controllers\Admin\DashboarController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EarnmoneyController;
 use App\Http\Controllers\Admin\ExchangeRateController;
 use App\Http\Controllers\Admin\RequestmoneyController;
@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth','verified')->prefix('admin')->group(function () {
-    Route::get('dashboard', [DashboarController::class, 'index'])->name('dashboard');
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('transection', [TransactionController::class, 'transection'])->name('transection');
     Route::get('earnmoney', [EarnmoneyController::class, 'earnmoney'])->name('earnmoney');
     Route::get('sendmoney', [SendmoneyController::class, 'sendmoney'])->name('sendmoney');

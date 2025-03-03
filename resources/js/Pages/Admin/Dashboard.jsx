@@ -16,7 +16,7 @@ export default function Dashboard({ rate }) {
   const [showModal, setshowModal] = useState(false);
   const [showendModal, setshowendModal] = useState(false);
 
-console.log('rate');
+// console.log('rate');
 
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -374,7 +374,7 @@ console.log('rate');
                     450,420.00 BDT
                   </span>
                   <p className="text-sm font-normal font-Inter text-[#667085]">
-                    (1 USD = 119.50 BDT) {rate}
+                  (1 USD = <strong>{rate}</strong> BDT)
                   </p>
                 </div>
               </div>
